@@ -1,11 +1,11 @@
-api version: apps/v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
     name: app-rs
 spec:
   replicas: 3
   selector:
-    match labels:
+    matchLabels:
        app: webapp  
   template:
     metadata:
