@@ -1,0 +1,19 @@
+api version: apps/v1
+kind: ReplicaSet
+metadata:
+    name: app-rs
+spec:
+  replicas: 3
+  selector:
+    match labels:
+       app: webapp  
+  template:
+    metadata:
+      name: my pod-app
+      labels:
+        app:webapp
+        type:front-end
+spec:
+  containers: 
+  - name: nginx-container
+    image: httpd       
