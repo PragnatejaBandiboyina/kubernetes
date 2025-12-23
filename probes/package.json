@@ -1,0 +1,12 @@
+{
+  "name": "probe-demo",
+  "version": "1.0.0",
+  "description": "Node.js app for Kubernetes liveness and readiness probe testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
